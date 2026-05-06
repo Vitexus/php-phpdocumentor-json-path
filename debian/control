@@ -1,0 +1,18 @@
+Source: php-phpdocumentor-json-path
+Section: php
+Priority: optional
+Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
+Build-Depends: debhelper-compat (= 13), jq
+Standards-Version: 4.6.2
+Homepage: https://github.com/phpDocumentor/json-path
+Vcs-Git: https://github.com/Vitexus/php-phpdocumentor-json-path.git
+Rules-Requires-Root: no
+
+Package: php-phpdocumentor-json-path
+Architecture: all
+Depends: ${misc:Depends}, php-cli | php, composer,
+ php-parsica-parsica,
+ php-symfony-property-access
+Description: JSONPath implementation for phpDocumentor
+ Provides JSONPath query support for phpDocumentor
+ configuration files using the parsica parser combinator library.
